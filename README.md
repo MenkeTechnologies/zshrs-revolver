@@ -19,7 +19,7 @@
 
 [revolver](https://github.com/molovo/revolver) — a progress spinner for the shell — ported to a **native [zshrs](https://github.com/MenkeTechnologies/zshrs) plugin**. Instead of a shell script that forks a background process and coordinates through a statefile, the spinner is a compiled Rust builtin whose animator runs on an in-process thread.
 
-### [`zshrs`](https://github.com/MenkeTechnologies/zshrs) &middot; [`znative`](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZPM.md) &middot; [`upstream`](https://github.com/molovo/revolver)
+### [`zshrs`](https://github.com/MenkeTechnologies/zshrs) &middot; [`znative`](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZNATIVE.md) &middot; [`upstream`](https://github.com/molovo/revolver)
 
 ---
 
@@ -45,7 +45,7 @@ Start a spinner, update its message while work runs, stop it. 55 styles (`dots`,
 znative load MenkeTechnologies/zshrs-revolver
 ```
 
-Put that one line in your `.zshrc`. [znative](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZPM.md), zshrs's package manager, installs the plugin on the first shell start — clones it, runs `cargo build --release`, and `zmodload -R`s the resulting `librevolver` — then loads it from the store, zero-network, on every start after. No separate install step.
+Put that one line in your `.zshrc`. [znative](https://github.com/MenkeTechnologies/zshrs/blob/main/docs/ZNATIVE.md), zshrs's package manager, installs the plugin on the first shell start — clones it, runs `cargo build --release`, and `zmodload -R`s the resulting `librevolver` — then loads it from the store, zero-network, on every start after. No separate install step.
 
 ### Manual build
 
