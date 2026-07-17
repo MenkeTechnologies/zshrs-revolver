@@ -11,5 +11,5 @@ description = "revolver (progress spinner) ported to a native zshrs plugin"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-zshrs-plugin = { git = "https://github.com/MenkeTechnologies/zshrs" }
+znative = "0.12"
 libc = "0.2"
