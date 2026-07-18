@@ -39,6 +39,8 @@
 //! | `_revolver_update`     | [`cmd_update`]           |
 //! | `_revolver_stop`       | [`cmd_stop`]             |
 //! | `_revolver_demo`       | [`cmd_demo`]             |
+#![allow(clippy::not_unsafe_ptr_arg_deref)]
+#![allow(rustdoc::private_intra_doc_links)]
 
 use std::io::Write;
 use std::os::raw::c_int;
