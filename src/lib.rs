@@ -306,7 +306,7 @@ fn revolver(host: &Host, args: &Args) -> c_int {
                 return 0;
             }
             "-v" | "--version" => {
-                host.print("0.2.0\n");
+                host.print(concat!(env!("CARGO_PKG_VERSION"), "\n"));
                 return 0;
             }
             "-s" | "--style" => {
@@ -357,7 +357,7 @@ fn revolver(host: &Host, args: &Args) -> c_int {
 
 declare_plugin! {
     name: "revolver",
-    version: "0.2.0",
+    version: "0.2.1",
     builtins: {
         "revolver" => revolver,
     },

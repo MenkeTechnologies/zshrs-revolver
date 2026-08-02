@@ -35,7 +35,7 @@
 
 ## [0x00] OVERVIEW
 
-Start a spinner, update its message while work runs, stop it. 55 styles (`dots`, `line`, `arc`, `bouncingBall`, `pong`, `shark`, …); `revolver demo` previews them. Options: `-h`/`--help`, `-v`/`--version`, `-s`/`--style <name>`.
+Start a spinner, update its message while work runs, stop it. 55 styles (`dots`, `line`, `arc`, `bouncingBall`, `pong`, `shark`, …); `revolver demo` previews them. Options: `-h`/`--help`, `-v`/`--version`, and `-s <name>` / `--style <name>` / `--style=<name>` / glued `-s<name>` for the spinner style.
 
 ---
 
