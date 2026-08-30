@@ -19,8 +19,8 @@
 //! resident process, so they share memory directly. The port therefore:
 //!
 //!   * spawns an in-process animator **thread** instead of forking a shell
-//!     (`_revolver_process`'s `while` loop → [`animate`]);
-//!   * keeps the running spinner in a `static` [`active`] slot instead of a
+//!     (`_revolver_process`'s `while` loop → `animate`);
+//!   * keeps the running spinner in a `static` `active` slot instead of a
 //!     `$PPID` statefile — no filesystem, no PID handshake, no orphan-check;
 //!   * `update` writes a shared `Mutex<String>`; `stop` flips an
 //!     `AtomicBool` and joins the thread.
@@ -32,15 +32,14 @@
 //!
 //! | zsh (`bin/revolver`)   | here                     |
 //! | ---------------------- | ------------------------ |
-//! | `revolver()` dispatch  | [`revolver`]             |
-//! | `_revolver_usage`      | [`usage`]                |
-//! | `_revolver_start`      | [`cmd_start`]            |
-//! | `_revolver_process`/`_revolver_spin` | [`animate`] |
-//! | `_revolver_update`     | [`cmd_update`]           |
-//! | `_revolver_stop`       | [`cmd_stop`]             |
-//! | `_revolver_demo`       | [`cmd_demo`]             |
+//! | `revolver()` dispatch  | `revolver`             |
+//! | `_revolver_usage`      | `usage`                |
+//! | `_revolver_start`      | `cmd_start`            |
+//! | `_revolver_process`/`_revolver_spin` | `animate` |
+//! | `_revolver_update`     | `cmd_update`           |
+//! | `_revolver_stop`       | `cmd_stop`             |
+//! | `_revolver_demo`       | `cmd_demo`             |
 #![allow(clippy::not_unsafe_ptr_arg_deref)]
-#![allow(rustdoc::private_intra_doc_links)]
 
 use std::io::Write;
 use std::os::raw::c_int;
