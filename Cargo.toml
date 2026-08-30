@@ -1,6 +1,6 @@
 [package]
 name = "revolver"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 publish = false
 description = "Native zshrs plugin porting revolver (progress spinner)"
