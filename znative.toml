@@ -1,6 +1,6 @@
 [plugin]
 name = "revolver"
-version = "0.2.1"
+version = "0.2.3"
 description = "revolver (progress spinner) ported to a native zshrs plugin — fork-free in-process animator: revolver start/update/stop/demo, 55 styles"
 
 [native]

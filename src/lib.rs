@@ -356,7 +356,7 @@ fn revolver(host: &Host, args: &Args) -> c_int {
 
 declare_plugin! {
     name: "revolver",
-    version: "0.2.1",
+    version: "0.2.3",
     builtins: {
         "revolver" => revolver,
     },
