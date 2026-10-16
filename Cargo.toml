@@ -1,6 +1,6 @@
 [package]
 name = "revolver"
-version = "0.2.3"
+version = "0.2.4"
 edition = "2021"
 publish = false
 description = "Native zshrs plugin porting revolver (progress spinner)"
@@ -14,5 +14,5 @@ homepage = "https://github.com/MenkeTechnologies/zshrs-revolver"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-znative = "0.12"
+znative = "0.13"
 libc = "0.2"
